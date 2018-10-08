@@ -1,0 +1,25 @@
+
+<div class="row">
+  <div class="col-sm-12">
+    <h4>Shopping Cart</h4>
+  </div>
+</div>
+<div class="col-sm-12 shopingcartdiv">
+  <div *ngIf="cartItems.length != 0">
+    <div class="row shopingremove" *ngFor="let item of cartItems; let i = index;">
+      <div class="col-sm-6">
+        <p>{{ item.productName }}</p>
+      </div>
+      <div class="col-sm-6">
+        <button type="button" class="btn radiusbtn" (click)="removeProduct(i)">Remove</button>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="cartItems.length == 0">
+    <div class="row shopingremove">
+        <div class="col-sm-12">
+          Your Cart is empty!
+        </div>
+      </div>
+  </div>
+</div>

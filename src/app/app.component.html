@@ -1,0 +1,12 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+    <div class="row" style="margin-top:15px;">
+        <div class="col-sm-9">
+            <app-products-list [products]="products" (productIndex)="addProductToCart($event)"></app-products-list>
+        </div>
+        <div class="col-sm-3">
+            <app-cart [cartItems]="cartItems" (productIndex)="removeProductFromCart($event)"></app-cart>
+        </div>
+    </div>
+</div>
+

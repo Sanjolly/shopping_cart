@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+.productdiv{
+    width:250px;
+    border:1px solid black;
+    text-align:center;
+    padding-bottom:15px;
+    margin-bottom:15px;
+    padding-top: 10px;
+    }
+    
+    .imgres{
+        height:180px;width:90px;
+    }
+    .price{
+        margin-top:10px;
+    }
+    .shopingremove{
+    border:1px solid black;
+    text-align:center;
+    padding:10px 0px 10px 0px;
+    
+    }
+    
+    .shopingcartdiv{
+        border:1px solid black;
+        padding:20px !important;
+        height:516px;
+    }
+    .radiusbtn{
+        border-radius:25px !important;
+    }
